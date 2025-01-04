@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed:
 my-app/
 ├── frontend/                  # Node.js app (frontend)
 │   ├── public/                # Static files
-│   │   ├── css/               # Stylesheets
+│   │   ├── stylesheets/               # Stylesheets
 │   │   │   └── styles.css
 │   │   ├── images/            # Images
 │   │   │   └── background.jpg
@@ -65,14 +65,14 @@ my-app/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/ynouri313/nodejs-ejs-app.git
+cd nodejs-ejs-app
 ```
 
 ### 2. Start the Containers
 
 ```bash
-docker-compose up --build
+docker compose up --build -d
 ```
 
 This will start the following services:
@@ -129,7 +129,7 @@ The `setup.sql` file initializes the database with the following schema and data
 
 ## Styling
 
-The app uses a custom CSS file (`public/css/styles.css`) for styling:
+The app uses a custom CSS file (`public/stylesheets/styles.css`) for styling:
 
 - A **background image** applied to all pages.
 - A **responsive button** for the "View Students" link.
